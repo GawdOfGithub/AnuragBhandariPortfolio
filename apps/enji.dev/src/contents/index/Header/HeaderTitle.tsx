@@ -61,7 +61,7 @@ function HeaderTitle() {
       <span className={clsx('text-slate-700', 'dark:text-slate-300')}>
         <m.span
           className={clsx(
-            'mb-4 block text-[2.5rem] font-[1000] leading-none',
+            'mb-4 block text-[2.5rem] 000] leading-none',
             'md:mb-6 md:text-7xl'
           )}
           initial={animation.hide}
@@ -69,10 +69,8 @@ function HeaderTitle() {
           transition={{ delay: 0.2 }}
         >
           I&apos;m{' '}
-          <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
-            Enji
-          </strong>{' '}
-          Kusnadi,{' '}
+          <strong className={clsx('text-accent-600', 'dark:text-accent-500')} />{' '}
+          Anurag Bhandari,{' '}
         </m.span>
         <m.h1
           className={clsx(
@@ -91,7 +89,7 @@ function HeaderTitle() {
               'dark:text-slate-300'
             )}
           >
-            Front-End Developer
+            Full-Stack Developer
           </strong>{' '}
           who loves intuitive,{' '}
           <span className={clsx('block')}>clean and modern UI design.</span>
