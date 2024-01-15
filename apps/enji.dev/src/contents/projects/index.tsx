@@ -1,25 +1,57 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 
-import { GitHubIcon, NpmIcon } from '@/components/Icons';
+import { GitHubIcon} from '@/components/Icons';
 import { SectionButton } from '@/components/sections/SectionButton';
 import SectionContent from '@/components/sections/SectionContent';
 import SectionTitle from '@/components/sections/SectionTitle';
 import AppWindow from '@/components/wireframes/AppWindow';
 import GitHubWireframe from '@/components/wireframes/GitHub';
-import NpmWireframe from '@/components/wireframes/Npm';
 
 function ProjectsContents() {
   const [currentState, setCurrentState] = useState<'npm' | 'github'>('github');
 
   return (
     <>
+    <div className='mb-10'>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+        title="Superior StackOverFLow"
+        caption="Bug-Hunter"
+        description="A Stack Over Flow like app but better which I created using bleeding-edge tech stack which consists of Next.JS,ServerActions,Clerk and MONGODB as the database."
         button={{
-          title: 'learn more',
+          title: 'Watch In Action',
+          href: 'https://hunt-the-bug.vercel.app/',
+        }}
+      />
+      </div>
+      <div className='mb-10'>
+      <SectionTitle
+        title="Apni Vidya"
+        caption="Apni-Vidya"
+        description="A full stack web app which is a real world application that connects home tutors with students which I created using bleeding-edge tech stack which consists of Next.JS,ServerActions,Razorpay and MONGODB as the database."
+        button={{
+          title: 'Watch In Action',
+          href: 'https://www.apnividya.in/',
+        }}
+      />
+      </div>
+      <div className='mb-10' >
+        <SectionTitle
+        title="React Fast Pizza."
+        caption="Fast-Pizza"
+        description="A food delivery app created using React,React Router and Redux Toolkit"
+        button={{
+          title: 'Watch In Action',
+          href: 'https://omni-food-blush.vercel.app/',
+        }}
+      />
+      </div>
+       <SectionTitle
+        title="Eloquent Pizza."
+        caption="Pizza Delivery App"
+        description="A food delivery app with eloquent UI that priortises design and user experience "
+        button={{
+          title: 'Watch In Action',
           href: '/docs/tailwindcss-accent',
         }}
       />
@@ -34,13 +66,7 @@ function ProjectsContents() {
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
               />
-              <SectionButton
-                title="npm package"
-                icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
-                description="Install and use the package with ease thanks to its typed options."
-                active={currentState === 'npm'}
-                onClick={() => setCurrentState('npm')}
-              />
+             
             </div>
           </div>
           <div className={clsx('w-full', 'lg:w-auto')}>
@@ -51,31 +77,21 @@ function ProjectsContents() {
                   browserTabs={[
                     {
                       icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'enjidev/tailwindcss-accent - GitHub',
+                      title: 'GawdOfGithub/BugHunt',
                       isActive: currentState === 'github',
                     },
-                    {
-                      icon: <NpmIcon className="h-4 w-4" />,
-                      title: 'tailwindcss-accent - npm',
-                      isActive: currentState === 'npm',
-                    },
+                   
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
-                      author="enjidev"
+                      author="GawdOfGithub"
                       license="MIT"
-                      repository="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      repository="Bug Hunt"
+                      description="Hunt your development bugs with this bleeding edge tech stack"
                     />
                   )}
-                  {currentState === 'npm' && (
-                    <NpmWireframe
-                      packageName="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
-                      isWithTypeScript
-                    />
-                  )}
+                  
                 </AppWindow>
               </div>
             </div>

@@ -187,17 +187,14 @@ function Activity({ onItemClick = () => {} }: ActivityProps) {
       }}
       className={clsx('flex flex-1 flex-col gap-2')}
     >
-      <m.div variants={animation} className={clsx('px-2 text-xl font-bold')}>
-        Recent Activities
-      </m.div>
+     
       <div
         className={clsx(
           'scrollbar-hide flex flex-1 basis-0 flex-col gap-2 overflow-y-auto p-2 pb-4',
           'sm:pb-8'
         )}
-      >
-        {renderData()}
-      </div>
+       />
+      {renderData()}
     </m.div>
   );
 }

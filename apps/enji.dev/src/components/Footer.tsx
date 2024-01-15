@@ -13,7 +13,7 @@ import dayjs from '@/utils/dayjs';
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/enjidev/enji.dev"
+      href="https://github.com/GawdOfGithub/enji.dev"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}
@@ -112,13 +112,13 @@ function FooterDescription() {
         About Me
       </div>
       <p className={clsx('mb-4 font-normal leading-relaxed')}>
-        I&apos;m Enji, a <strong>front-end developer</strong> who loves
-        intuitive, clean and modern UI design.
+        I&apos;m Anurag, an  Entrepreneur<strong> and a full stack developer</strong> who loves
+        solving problems and building suff
       </p>
       <ul className={clsx('-ml-2 flex gap-1')}>
         <li>
           <a
-            href="https://twitter.com/enjidev"
+            href="https://twitter.com/AnuragB00358254"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -130,7 +130,7 @@ function FooterDescription() {
         </li>
         <li>
           <a
-            href="https://github.com/enjidev"
+            href="https://github.com/GawdOfGithub"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -140,18 +140,7 @@ function FooterDescription() {
             <GitHubIcon className={clsx('h-5 w-5')} />
           </a>
         </li>
-        <li>
-          <a
-            href="https://figma.com/@enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Figma profile"
-            title="My Figma profile"
-          >
-            <FigmaIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
+       
       </ul>
     </div>
   );
@@ -177,9 +166,10 @@ function Footer() {
                 'sm:flex-row sm:gap-16 lg:mx-0'
               )}
             >
-              <div className={clsx('flex', 'sm:gap-16')}>
+              <div className={clsx('flex items-center justify-center', 'sm:gap-16')}>
                 <FooterGroup
                   title="Work"
+                  
                   links={[
                     { title: 'Contact', href: '/work/contact' },
                     { title: 'Experience', href: '/work/experience' },
@@ -195,46 +185,9 @@ function Footer() {
                     { title: 'Studio', href: '/work/studio' },
                   ]}
                 />
-                <FooterGroup
-                  title="Learn"
-                  links={[
-                    {
-                      title: 'Docs',
-                      href: '/docs',
-                    },
-                    {
-                      title: 'Personal Blog',
-                      href: '/blog',
-                    },
-                    {
-                      title: 'T.I.L',
-                      href: '/today-i-learned',
-                      label: 'new',
-                    },
-                  ]}
-                />
+               
               </div>
-              <div className={clsx('flex', 'sm:gap-16')}>
-                <FooterGroup
-                  title="This Site"
-                  links={[
-                    {
-                      title: 'Design Concept',
-                      href: 'https://www.figma.com/community/file/1176392613303840973',
-                      isInternal: false,
-                    },
-                    {
-                      title: 'Source Code',
-                      href: 'https://github.com/enjidev/enji.dev',
-                      isInternal: false,
-                    },
-                    {
-                      title: 'Credits',
-                      href: '/credits',
-                    },
-                  ]}
-                />
-              </div>
+              <div className={clsx('flex', 'sm:gap-16')} />
             </div>
           </div>
         </div>
@@ -245,7 +198,7 @@ function Footer() {
           )}
         >
           <div className={clsx('font-semibold')}>
-            &copy; {dayjs().format('YYYY')}, Enji Kusnadi
+            &copy; {dayjs().format('YYYY')}, Anurag Bhandari
           </div>
           <div className={clsx('text-slate-500', 'dark:text-slate-400')}>
             <LastUpdate />

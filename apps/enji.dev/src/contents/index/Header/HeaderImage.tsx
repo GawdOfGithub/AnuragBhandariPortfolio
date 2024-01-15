@@ -53,7 +53,7 @@ function HeaderImage() {
             animate={controlsHeaderImage}
           >
             <Image
-              alt="Enji Kusnadi Illustration"
+              alt="Anurag Bhandari Illustration"
               src="/assets/images/ultimatePic.png"
               width={457}
               height={526}

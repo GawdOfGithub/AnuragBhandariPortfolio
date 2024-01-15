@@ -2,7 +2,11 @@ import clsx from 'clsx';
 import { m, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
-import { DocumentIcon } from '@/components/Icons';
+import { DocumentIcon } from '@/components/Icons'
+
+
+// import resume from "../../../../public/resume.pdf"
+
 
 const animation = {
   hide: {
@@ -33,15 +37,15 @@ function ButtonContactMe() {
 
 function ButtonResume() {
   return (
-    <a
-      target="_blank"
-      rel="noreferrer nofollow"
-      href="https://www.figma.com/community/file/1176377524040948926"
+    <Link
+   
+      href="/projects"
+     
       className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
     >
       <DocumentIcon className={clsx('h-5 w-5')} />
-      RESUME
-    </a>
+      Projects
+    </Link>
   );
 }
 
