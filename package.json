@@ -8,9 +8,11 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "eslint": "^8.31.0",
-    "prettier": "^2.8.1",
-    "prettier-plugin-tailwindcss": "^0.2.1",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.22.0"

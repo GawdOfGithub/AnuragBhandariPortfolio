@@ -18,16 +18,12 @@ function PageWithMDX({
   tableOfContents,
   children = null,
 }: PropsWithChildren<PageWithMDXProps>) {
-  const image = getPageOgImageUrl({
-    caption,
-    title,
-    description,
-  });
+  
 
   return (
     <>
       <SkipNavigation />
-      <Head title={title} description={description} ogImage={image.default} />
+      <Head title={title} description={description} />
       <PageHeader title={title} description={description} caption={caption} />
       <WithTableOfContents tableOfContents={tableOfContents}>
         {children}

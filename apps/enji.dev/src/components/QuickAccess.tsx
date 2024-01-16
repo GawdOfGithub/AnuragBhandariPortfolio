@@ -2,14 +2,14 @@ import { Dialog } from '@headlessui/react';
 import clsx from 'clsx';
 import { m } from 'framer-motion';
 import { useRef } from 'react';
-
+import useGlobal from '@/hooks/useGlobal';
 import ActionCenter from '@/components/ActionCenter';
-import Activity from '@/components/Activity';
+
 import { XIcon } from '@/components/Icons';
-import NewPosts from '@/components/NewPosts';
+
 import TipShortcuts from '@/components/TipShortcuts';
 
-import useGlobal from '@/hooks/useGlobal';
+
 
 const animation = {
   hide: { opacity: 0 },
@@ -18,7 +18,7 @@ const animation = {
 
 function QuickAccess() {
   const closeButtonRef = useRef(null);
-  const { isQuickAccessOpen, setQuickAccessOpen } = useGlobal();
+  const { isQuickAccessOpen, setQuickAccessOpen } = useGlobal()
 
   return isQuickAccessOpen ? (
     <Dialog
@@ -72,10 +72,10 @@ function QuickAccess() {
               <ActionCenter />
             </div>
             <div className={clsx('')}>
-              <NewPosts onItemClick={() => setQuickAccessOpen(false)} />
+              
             </div>
             <div className={clsx('flex flex-1 flex-col')}>
-              <Activity onItemClick={() => setQuickAccessOpen(false)} />
+          
             </div>
             <div
               className={clsx(

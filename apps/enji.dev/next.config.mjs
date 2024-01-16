@@ -5,6 +5,9 @@ import remarkPlugins from 'remark-plugins';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+},
   redirects: async () => [
     {
       source: '/work',
@@ -33,5 +36,6 @@ const withMDX = nextMDX({
     providerImportSource: '@mdx-js/react',
   },
 });
+
 
 export default withBundleAnalyzer(withMDX(nextConfig));

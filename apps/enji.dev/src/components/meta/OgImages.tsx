@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 
-import { formatLang } from '@/helpers/post';
+
 
 import type { TPageOgImage, TPostOgImage } from '@/types';
 import type { CSSProperties } from 'react';
@@ -163,7 +163,7 @@ export function PostOgImage({
         {lang && (
           <>
             <div style={styles.divider}>&middot;</div>
-            <div style={styles.description}>{formatLang(lang)}</div>
+          
           </>
         )}
       </div>

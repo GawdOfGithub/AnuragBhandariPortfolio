@@ -19,15 +19,11 @@ function Page({
   children = null,
   headerImage = null,
 }: PropsWithChildren<PageProps>) {
-  const image = getPageOgImageUrl({
-    caption,
-    title,
-    description,
-  });
+  
 
   return (
     <>
-      <Head title={title} description={description} ogImage={image.default} />
+      <Head title={title} description={description}  />
       <SkipNavigation skipTableOfContents={false} />
       <PageHeader
         title={title}
